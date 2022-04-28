@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Image</title>
+  </head>
+  <body>
+    <h1>Image</h1>
+
+    <p>
+      Si vous voulez éviter des problèmes, prenez l'habitude d'enregistrer vos
+      fichiers avec des noms en minuscules, sans espace ni accent ; par exemple
+      : mon_image.png . Vous pouvez remplacer les espaces par le caractère
+      underscore (« _ »), comme je l'ai fait ici.
+    </p>
+    <p>
+      Voici la photo que j'ai prises d'une magnifique vue. <br />
+      <img
+        src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unspla-mini.jpg"
+        alt="Magnifique vue"
+        title="magnifique photo"
+      />
+
+      <!-- img src= et alt=
+    L'image se place (généralement) souvent dans un paragraphe de texte -->
+    </p>
+
+    <p>
+      Si votre image est très grosse, il est conseillé d'en afficher la
+      miniature sur votre site. Ajoutez ensuite un lien sur cette miniature pour
+      que vos visiteurs puissent afficher l'image en taille originale.
+    </p>
+    <p>
+      Vous souhaitez voir l'image dans sa taille d'origine ? Cliquez dessus !<br />
+      <a href="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+        ><img
+          src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unspla-mini.jpg"
+          alt="Magnique vue"
+          title="Cliquez pour agrandir"
+        />
+      </a>
+      <!-- <a> En réferance au lien qu'on va afficher entre l'image en miniature <img src= /> </a> -->
+      <!-- Afficher sur la photo sur page et un lien vers la photo en taille réelle -->
+    </p>
+
+    <p>
+      Vous souhaitez voir l'image dans sa taille d'origine ? Cliquez dessus !<br />
+      <a href="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+        ><img
+          src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplas_mini.jpg"
+          alt="fond bleu"
+          title="Voir la photo en taille réelle"
+      /></a>
+      <!-- <a> En réferance au lien qu'on va afficher entre l'image en miniature <img src= /> </a> -->
+      <!-- Afficher sur la photo sur page et un lien vers la photo en taille réelle -->
+    </p>
+
+    <p>
+      Je ne vois pas vraiment de changement. Quand dois-je placer mon image dans
+      un paragraphe et quand dois-je la placer dans une figure ?
+    </p>
+    <h1>Bien comprendre les figures</h1>
+    <p>Un peu plus tôt dans ce chapitre, 
+      je vous ai dit que les images devaient être situées dans des paragraphes 
+      (placées à l'intérieur d'une balise  <p></p>). 
+    Ce n'est pas tout à fait vrai.
+Si vous faites de votre image une figure, l'image peut être située en-dehors d'un paragraphe.</p>
+    <figure>
+      <img src="image-bloc-notes.png" alt="Bloc-Notes" title="Bloc-notes" />
+      <figcaption>Le logiciel Bloc-Notes</figcaption>
+    </figure>
+
+    <p>La balise (figure) a un rôle avant tout sémantique. Cela veut dire qu'elle indique à l'ordinateur que l'image a du sens et qu'elle est importante pour la bonne compréhension du texte. Cela peut permettre à un programme de récupérer toutes les figures du texte et de les référencer dans une table des figures, par exemple.
+
+      Enfin, sachez qu'une figure peut très bien comporter plusieurs images. Voici un cas où cela se justifie</p>
+
+      <figure>
+        <img src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unspla-mini.jpg" alt="magnifiquee photo" title="belle photo">
+        <img src="image-bloc-notes.png" alt="Bloc-Notes" title="Bloc-notes">
+        <figcaption>2 images différentes</figcaption>
+      </figure>
+      <p>La balise  <figcaption>  permet d'écrire la légende de l'image.</p>
+  </body>
+</html>
